@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- The reason why HTML is not having a schema is because
+	it only has a limitted number of tags. -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// Select all the <a> tags with href attribute points to Baidu. 
+		$('a[href="http://www.baidu.com"]').click(function() {
+			$(this).hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<a href="http://www.baidu.com">Baidu</a>
+	<a href="http://www.google.com">Google</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- The reason why HTML is not having a schema is because
+	it only has a limitted number of tags. -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// Select a certain tag or the tag with a certain type. 
+		$(':button').click(function() {
+			$(this).hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<button>Click Me</button>
+	<input type="button" value="Click Me Again"/>
+</body>
+</html>

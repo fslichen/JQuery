@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// Once clikced, it determined whether its index is and odd number.
+		// If it is, then the current element is going to vanish.
+		// Index started with 0. 
+		$('p:odd').click(function() {
+			$(this).hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<p>0</p>
+	<p>1</p>
+	<p>2</p>
+	<p>3</p>
+</body>
+</html>

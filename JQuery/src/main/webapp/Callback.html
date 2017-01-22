@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#anyButton').click(function() {
+			$(this).hide('slow', function() {
+				alert("The button has been hidden.")
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<button id="anyButton">Click Me</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Place the downloaded file in the same directory as the pages where you wish to use it. -->
+<!-- type="text/javascript" is not required because JavaScript is the default scripting language in HTML5 and in all modern browsers. -->
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+    // It is good practice to wait for the document to be fully loaded and ready before working with js.
+	$(document).ready(function() {
+		// $ means you are ready to use jQuery. 
+		// Within the $() is the selector. 
+		// . is the class selector, # is the ID selector, the selector without any prefix is the tag selector. 
+		// After the $() is the action. 
+		$('#anyButton').click(function() {
+			$(this).hide();// this refers to the current element, which is this case represents the button with ID equals anyButton.
+		});
+	});
+</script>
+</head>
+<body>
+	<!-- id attribute refers to # -->
+	<input id="anyButton" type="button" value="Click Me" />
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('p').on({
+			mouseenter: function() {
+		        alert("Hey, did you just enter?!");
+		    }, 
+		    mouseleave: function() {
+		    	alert("Hey, did you just leave?!");
+		    }, 
+		    click: function() { 
+		    	alert("Hey, did you just click?!");
+		    }
+		});
+	});
+</script>
+</head>
+<body>
+	<p>Hello World</p>
+</body>
+</html>

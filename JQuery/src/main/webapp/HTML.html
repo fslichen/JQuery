@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// Set the html.
+		$('#p0').html('<a href="http://www.google.com">Google</a>');
+		// Get the html.
+		alert($('#p1').html());
+	});
+</script>
+</head>
+<body>
+	<p id="p0"></p>
+	<p id="p1">
+		<a href="http://www.google.com">Google</a>
+	</p>
+</body>
+</html>

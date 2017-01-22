@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- The reason why HTML is not having a schema is because
+	it only has a limitted number of tags. -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// Select the first <li> within <ul>. 
+		$('ul li:first').click(function() {
+			$(this).hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<ul>
+		<li>Elsa</li>
+		<li>Anna</li>
+	</ul>
+</body>
+</html>

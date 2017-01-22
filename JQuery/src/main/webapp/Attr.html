@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('a').mouseenter(function() {
+			// Get the attribute.
+			alert($(this).attr('href'));
+			// Set the attribute.
+			$(this).attr('href', 'http://www.baidu.com');
+		});
+	});
+</script>
+</head>
+<body>
+	<a href="http://www.google.com">Google</a>
+</body>
+</html>

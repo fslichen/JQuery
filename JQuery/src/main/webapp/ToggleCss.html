@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" href="Style.css" />
+<script>
+	$(document).ready(function() {
+		$('p').toggleClass('blue');
+		// Use comma to separate the tags.
+		$('h1, h2').toggleClass('blue');
+	});
+</script>
+</head>
+<body>
+	<p class="blue">Hello World</p>
+	<h1>Evolution</h1>
+	<h2 class="blue">STEM</h2>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// Inserts content after the selected elements.
+		// The after action is relevant to <ul> rather than the <p> for Hello World.
+		$('ul').after('<p>Hello World</p>').after('<p>Goodbye Past</p>');
+	});
+</script>
+</head>
+<body>
+	<ul>
+		<li>Website</li>
+	</ul>
+</body>
+</html>

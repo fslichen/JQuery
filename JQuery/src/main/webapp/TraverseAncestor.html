@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#li0').parent().append('<li>GoodBye Past</li>');
+		var parents = $('#li0').parents();// Return all the parents.
+		for (var i = 0; i < parents.length; i++) {
+			alert(parents[i]);
+		}
+		var parents = $('#li0').parentsUntil('body');// Does not include body.
+		for (var i = 0; i < parents.length; i++) {
+			alert(parents[i]);
+		}
+	});
+</script>
+</head>
+<body>
+	<ul>
+		<li id="li0">Hello World</li>
+	</ul>
+</body>
+</html>

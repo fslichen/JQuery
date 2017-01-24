@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		var children = $('ul').children();
+		for (var i = 0; i < children.length; i++) {
+			alert(children[i].innerHTML);
+		}
+		var abnormalChildren = $('ul').children('li.abnormal');
+		for (var i = 0; i < abnormalChildren.length; i++) {
+			alert(abnormalChildren[i].innerHTML);
+		}
+		var children = $('ul').find('li');
+		for (var i = 0; i < children.length; i++) {
+			alert(children[i].innerHTML);
+		}
+	});
+</script>
+</head>
+<body>
+	<ul>
+		<li>Hello World</li>
+		<li class="abnormal">Goodbye Past</li>
+		<li>Good Morning</li>
+	</ul>
+</body>
+</html>

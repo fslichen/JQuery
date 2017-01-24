@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('p').first().append('<p>Hey</p>');
+		$('p').last().append('<p>Cool</p>');
+		$('p').eq(0).append('<p>Kiss</p>');
+		$('p').filter('.anyClass').append('<p>Good Morning</p>')// Keep the tags that statisfies the criteria.
+		$('p').not('.anyClass').append('<p>Good Morning</p>')// Drop the tags that statisfies the criteria.
+	});
+</script>
+</head>
+<body>
+	<p>Hello World</p>
+	<p>Goodbye Past</p>
+	<p class="anyClass">Hi</p>
+</body>
+</html>
